@@ -1,7 +1,7 @@
 ARG version 
 FROM almalinux:${version:-8}
 # cat /etc/*release 
-ARG course = docker
-ARG trainer = sivakumar
-RUN echo "course is: ${course} ,Trainer is: ${trainer}"
+ARG COURSE=docker
+ARG TRAINER=sivakumar
+RUN echo "course is: ${COURSE} ,Trainer is: ${TRAINER}"
 CMD ["sleep","100"]
